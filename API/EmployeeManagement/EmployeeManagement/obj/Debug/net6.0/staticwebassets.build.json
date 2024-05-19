@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "lLAGEfPW6U5OYpJ9FhamDjl40JnU2FmZtY9dAchzm4s=",
+  "Source": "EmployeeManagement",
+  "BasePath": "_content/EmployeeManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EmployeeManagement\\wwwroot",
+      "Source": "EmployeeManagement",
+      "ContentRoot": "D:\\Nidhi\\Project\\Practical\\EmployeeManagement\\API\\EmployeeManagement\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

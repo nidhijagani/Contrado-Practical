@@ -1,0 +1,11 @@
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\bin\Debug\net6.0\EmployeeManagement.Model.deps.json
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\bin\Debug\net6.0\EmployeeManagement.Model.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\bin\Debug\net6.0\EmployeeManagement.Model.pdb
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\EmployeeManagement.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\EmployeeManagement.Model.AssemblyInfoInputs.cache
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\EmployeeManagement.Model.AssemblyInfo.cs
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\EmployeeManagement.Model.csproj.CoreCompileInputs.cache
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\EmployeeManagement.Model.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\refint\EmployeeManagement.Model.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\EmployeeManagement.Model.pdb
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Model\obj\Debug\net6.0\ref\EmployeeManagement.Model.dll

@@ -1,0 +1,15 @@
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\bin\Debug\net6.0\EmployeeManagement.Data.deps.json
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\bin\Debug\net6.0\EmployeeManagement.Data.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\bin\Debug\net6.0\EmployeeManagement.Data.pdb
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\bin\Debug\net6.0\EmployeeManagement.Model.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\bin\Debug\net6.0\EmployeeManagement.Model.pdb
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.csproj.AssemblyReference.cache
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.AssemblyInfoInputs.cache
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.AssemblyInfo.cs
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.csproj.CoreCompileInputs.cache
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\Employee.9E5E077A.Up2Date
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\refint\EmployeeManagement.Data.dll
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\EmployeeManagement.Data.pdb
+D:\Nidhi\Project\Practical\EmployeeManagement\API\EmployeeManagement\EmployeeManagement.Data\obj\Debug\net6.0\ref\EmployeeManagement.Data.dll
