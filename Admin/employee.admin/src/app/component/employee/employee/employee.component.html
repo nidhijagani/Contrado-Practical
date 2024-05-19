@@ -1,0 +1,82 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Employee List</h4>
+                    </div>
+                    <div class="card-body">
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Search here" [(ngModel)]="searchValue" (keyup.enter)="onSearch()" (keyup)="!searchValue &&  onSearch()"  type="text">
+                        </mat-form-field>
+                        <button mat-raised-button type="button" (click)="addNewEmployee()"  class="btn btn-primary pull-right">
+                            <i class="material-icons">add</i> Add Employee
+                        </button>
+                        <div class="table-responsive">
+                            <div class="mat-elevation-z8">
+                                <table mat-table class="full-width-table" matSortActive="EmpTagNumber" [dataSource]="dataSource" matSort (matSortChange)="onSort($event)" matSortDisableClear aria-label="Elements">
+                                  <!-- EmpTagNumber Column -->
+                                  <ng-container matColumnDef="EmpTagNumber">
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Emp Tag Number</th>
+                                    <td mat-cell *matCellDef="let row">{{row.empTagNumber}}</td>
+                                  </ng-container>
+                              
+                                  <!-- FirstName Column -->
+                                  <ng-container matColumnDef="FirstName">
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>First Name</th>
+                                    <td mat-cell *matCellDef="let row">{{row.firstName}}</td>
+                                  </ng-container>
+                              <!-- LastName Column -->
+                              <ng-container matColumnDef="LastName">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header>Last Name</th>
+                                <td mat-cell *matCellDef="let row">{{row.lastName}}</td>
+                              </ng-container>
+                              <!-- EmailAddress Column -->
+                              <ng-container matColumnDef="EmailAddress">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
+                                <td mat-cell *matCellDef="let row">{{row.emailAddress}}</td>
+                              </ng-container>
+                              <!-- Department Column -->
+                              <ng-container matColumnDef="Department">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header>Department</th>
+                                <td mat-cell *matCellDef="let row">{{row.department}}</td>
+                              </ng-container>
+                              <!-- Designation -->
+                              <ng-container matColumnDef="Designation">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header>Designation</th>
+                                <td mat-cell *matCellDef="let row">{{row.designation}}</td>
+                              </ng-container>
+                               <!-- Birthdate -->
+                               <ng-container matColumnDef="Age">
+                                <th mat-header-cell *matHeaderCellDef mat-sort-header>Age</th>
+                                <td mat-cell *matCellDef="let row">{{row.age}}</td>
+                              </ng-container>
+                                   <!-- Action -->
+                                   <ng-container matColumnDef="Action">
+                                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
+                                    <td mat-cell *matCellDef="let row">
+                                            <i class="material-icons cursor_pointer" (click)="editEmployee(row.employeeId)">edit</i> 
+                                            <i class="material-icons cursor_pointer"  (click)="deleteEmployee(row.employeeId)">delete</i> 
+                                    </td>
+                                  </ng-container>
+                                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                </table>
+                              
+                                <mat-paginator #paginator
+                                    [length]="totalEmployees"
+                                    [pageIndex]="0"
+                                    [pageSize]="10"
+                                    [pageSizeOptions]="[5, 10, 20]"
+               (page)="onPageChange($event)">
+                                </mat-paginator>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

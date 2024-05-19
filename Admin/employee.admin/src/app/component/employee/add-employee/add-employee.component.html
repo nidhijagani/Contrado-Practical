@@ -1,0 +1,132 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">{{header_employee}}</h4>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="employeeFormGroup">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Emp Tag Number</mat-label>
+                                        <input matInput placeholder="Emp Tag Number" formControlName="empTagNumber"
+                                            [(ngModel)]="employeeDetail.empTagNumber" type="text">
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.empTagNumber.invalid && employeeFormGroup.controls.empTagNumber.touched">
+                                            Employee Tag Number is required
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>First Name</mat-label>
+                                        <input matInput placeholder="First Name" formControlName="firstName"
+                                            [(ngModel)]="employeeDetail.firstName" type="text">
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.firstName.invalid && employeeFormGroup.controls.firstName.touched">
+                                            First Name is required
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Last Name</mat-label>
+                                        <input matInput placeholder="Last Name" formControlName="lastName"
+                                            [(ngModel)]="employeeDetail.lastName" type="text">
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.lastName.invalid && employeeFormGroup.controls.lastName.touched">
+                                            Last Name is required
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Email Address</mat-label>
+                                        <input matInput placeholder="Email Address" formControlName="emailAddress"
+                                            [(ngModel)]="employeeDetail.emailAddress" type="text">
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.emailAddress.invalid && employeeFormGroup.controls.emailAddress.touched">
+                                            Email address is required or invalid
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field>
+                                        <mat-label>Birth Date</mat-label>
+                                        <input matInput [matDatepicker]="picker" [(ngModel)]="employeeDetail.birthdate"
+                                            formControlName="birthDate" placeholder="Choose a BirthDate">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.birthDate.invalid && employeeFormGroup.controls.birthDate.touched">
+                                            Birth date is required
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                    <mat-form-field>
+                                        <mat-label>Department</mat-label>
+                                        <mat-select [(ngModel)]="employeeDetail.departmentId"
+                                            placeholder="Select Department" formControlName="department"
+                                            (valueChange)="getDesignationList($event, true)">
+                                            <!-- If using reactive forms -->
+                                            <mat-option *ngFor="let department of departmentList"
+                                                [value]="department.id">
+                                                {{ department.name }}
+                                            </mat-option>
+                                        </mat-select>
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.department.invalid && employeeFormGroup.controls.department.touched">
+                                            Select department
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <mat-form-field>
+                                        <mat-label>Designation</mat-label>
+                                        <mat-select [(ngModel)]="employeeDetail.designationId"
+                                            placeholder="Select Designation" formControlName="designation">
+                                            <!-- If using reactive forms -->
+                                            <mat-option *ngFor="let designation of designationList"
+                                                [value]="designation.id">
+                                                {{ designation.name }}
+                                            </mat-option>
+                                        </mat-select>
+                                        <mat-error class="clr_red"
+                                            *ngIf="employeeFormGroup.controls.designation.invalid && employeeFormGroup.controls.designation.touched">
+                                            Select designation
+                                        </mat-error>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <button mat-raised-button type="button" (click)="saveEmployee()"
+                                        class="btn btn-primary pull-right m_l_10">
+                                        Save
+                                    </button>
+
+                                    <button mat-raised-button type="button" (click)="cancelEmployee()"
+                                        class="btn btn-danger pull-right ">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
